@@ -1,12 +1,17 @@
 .card{
     background: var(--card-bg-color);
     width: 19.75rem;
-    padding-block: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 6px;
     border-bottom: 1px solid var(--card-color-primary);
+}
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .card img{
     width: 3.125rem;
@@ -19,4 +24,8 @@
 .card ul li strong{
     font-size: 2.25rem;
     color:var(--game-hour-color);
+}
+.card ul li + li {
+    padding-top:1.5rem;
+    border-top: 1px solid var(--li-border-color);
 }
